@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
+
+body {
+	background: black;
+	background: url("./media/change.gif") no-repeat center center fixed;
+    background-size: cover;
+	
+	color: white;
+	text-align: center;
+	font: 3vw/1.2 'Gelasio', serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 55vw;
+	margin: 0 auto;
+	min-height: 100vh;
+	perspective: 200px;
+	animation: perspective 3s cubic-bezier(.35,.06,.92,.03) infinite;
+	
+	@keyframes perspective {
+		0% { perspective: 100px; transform: scale(.5); }
+		100% { perspective: 10000px; transform: scale(1);	}
+	}
+}
+
+p {
+	transform-style: preserve-3d;
+}
+
+
+a:link {
+  color: #a7dba2;
+  font-size: small;
+}
+
+
+a:visited {
+  color: #83a880;
+  font-size: small;
+}
+
+
+a:hover {
+  color: #496e45;
+  font-size: small;
+}
+
+
+a:active {
+  color: #43803c;
+  font-size: small;
+}
